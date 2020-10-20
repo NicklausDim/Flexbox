@@ -1,0 +1,138 @@
+body{
+    margin: 0;
+    background-color: rgb(180, 175, 175);
+}
+header {
+    display: flex;
+    align-items: center;
+    background-color: rgb(243, 214, 240);
+    z-index: 1000;
+    position: fixed;
+    height: 100px;
+    margin: 0%;
+}
+.logo {
+    height: 10vh;
+    width: 10vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.logo > img {
+    height:10vmin;
+    min-height: 35px;
+}
+nav {
+    overflow: hidden;
+    background-color: rgb(73, 70, 70);
+    width: 90vw;
+    height: 35px;
+}
+nav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 10px 16px;
+    text-decoration: none;
+    font-size: 19px;
+}
+.topnav a:hover {
+    background-color: rgb(233, 132, 188);
+    color: black;
+}
+.topnav a.active {
+    background-color: rgb(247, 73, 73);
+    color: white;
+}
+aside {
+    width: 10%;
+    height: 60%;
+    background-color: rgb(34, 144, 180);
+    float: left;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    position: fixed;
+    margin-top: 30px;
+    color: white;
+    text-align: center;
+}
+#ad {
+    right: 0;
+}
+main {
+    float: left;
+    background-color: rgb(247, 247, 131);
+    width: 80%;
+    margin-left: 10%;
+}
+.empty{
+    display: inline-block;
+    margin-top: 95px;
+    width: 100%;
+}
+.row {
+    width: 100%;
+    margin: 0;
+    display: flex;
+    height: 43vh;
+}
+.article-50-w {
+    width: 50%;
+    display: inline-block;
+    margin: 0;
+}
+.bg-blue {
+    background-color: blue;
+}
+.bg-green {
+    background-color: green;
+}
+.bg-red {
+    background-color: red;
+}
+.bg-black {
+    background-color: black;
+}
+.bg-yellow {
+    background-color: yellow;
+}
+.article-box {
+    border: 1px solid black;
+    background: rgb(189, 30, 43);
+    height: 100px; 
+    width: 200px;
+}
+.row2 {
+    margin: 10px;
+    width: 98%;
+}
+.vertical-row {
+    width: 100%;
+    border: 1px solid black;
+    height: 32.9%;
+}
+.boxes {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 40px;
+    width: 40vw;
+}
+.bg-purple {
+    background-color: purple;
+}
+.bg-grey {
+    background-color: grey;
+}
+@media only screen and (max-width: 800px) {
+    .article1{width: 100%;height: 40vh;margin:0}
+    .row{flex-wrap: wrap;height: unset;}
+    .article2{width: 50%;height: 40vh;margin: 0%;}
+    .article-box{margin: 10px;}
+}
+@media only screen and (max-width: 400px) {
+    .article1{width: 100%;height: 40vh;margin:0}
+    .row{flex-wrap: wrap;height: unset;}
+    .article2{width: 100%;height: 40vh;margin: 0%;}
+    .article-box{margin: 10px;}
+}
