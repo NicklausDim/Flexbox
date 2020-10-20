@@ -100,8 +100,8 @@ main {
 .article-box {
     border: 1px solid black;
     background: rgb(189, 30, 43);
-    height: 100px; 
-    width: 200px;
+    height: 10vh; 
+    width: 20vw;
 }
 .row2 {
     margin: 10px;
@@ -115,8 +115,13 @@ main {
 .boxes {
     display: flex;
     justify-content: space-around;
-    margin-top: 40px;
-    width: 40vw;
+    text-align: center;
+    align-content: space-around;
+    flex-wrap: wrap;
+}
+.boxes>article {
+    height: 40%;
+    width: 40%;
 }
 .bg-purple {
     background-color: purple;
@@ -128,11 +133,11 @@ main {
     .article1{width: 100%;height: 40vh;margin:0}
     .row{flex-wrap: wrap;height: unset;}
     .article2{width: 50%;height: 40vh;margin: 0%;}
-    .article-box{margin: 10px;}
+    .boxes{width: 100%; height: 40vh;}
 }
 @media only screen and (max-width: 400px) {
     .article1{width: 100%;height: 40vh;margin:0}
     .row{flex-wrap: wrap;height: unset;}
     .article2{width: 100%;height: 40vh;margin: 0%;}
-    .article-box{margin: 10px;}
+    
 }
